@@ -4,7 +4,7 @@ using System.Collections.Generic; // for List<>
 
 /*
  * v0.5 2015/09/07
- *   - do not draw graph for canvas.localScale < 0.1 (hide mode)
+ *   - do not draw graph for ( canvas.localScale < 0.1 ) [hide mode]
  * v0.4 2015/09/07
  *   - fix: was destroying child[] of Panel other than "LineGroup" at clearGraph()
  * v0.3 2015/09/06
