@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic; // for List<>
 
 /*
+ * v0.5 2015/09/07
+ *   - do not draw graph for canvas.localScale < 0.1 (hide mode)
  * v0.4 2015/09/07
  *   - fix: was destroying child[] of Panel other than "LineGroup" at clearGraph()
  * v0.3 2015/09/06
@@ -41,7 +43,20 @@ public class graphDrawControl : MonoBehaviour {
 		newLine.transform.parent = lineGroup.transform; // for grouping
 	}
 
+	bool isHide(GameObject panel) {
+		RectTransform rect = panel.GetComponent (typeof(RectTransform)) as RectTransform;
+		Vector2 scale = rect.localScale;
+		if (scale.x < 0.1) {
+			return true;
+		}
+		return false;
+	}
+
 	void drawGraph(List<Vector2> my2DVec, GameObject panel) {
+		if (isHide (panel)) {
+			return;
+		}
+
 		lineGroup = new GameObject ("LineGroup");
 
 		for (int idx=0; idx < my2DVec.Count - 1; idx++) {
