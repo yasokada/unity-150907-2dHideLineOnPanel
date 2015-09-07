@@ -256,6 +256,7 @@ GameObject:
   - 224: {fileID: 894629676}
   - 222: {fileID: 894629678}
   - 114: {fileID: 894629677}
+  - 114: {fileID: 894629679}
   m_Layer: 5
   m_Name: sinePanel
   m_TagString: Untagged
@@ -307,6 +308,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 894629675}
+--- !u!114 &894629679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894629675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &1003621109
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +330,7 @@ GameObject:
   - 224: {fileID: 1003621112}
   - 222: {fileID: 1003621111}
   - 114: {fileID: 1003621110}
+  - 114: {fileID: 1003621113}
   m_Layer: 5
   m_Name: cosinePanel
   m_TagString: Untagged
@@ -368,6 +382,18 @@ RectTransform:
   m_AnchoredPosition: {x: 583.5, y: -191.25}
   m_SizeDelta: {x: 223, y: 276.5}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1003621113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1003621109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &1031069521
 GameObject:
   m_ObjectHideFlags: 0
